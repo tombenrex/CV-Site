@@ -330,7 +330,7 @@ p {
     top: 0;
     left: 0;
     border: 1px solid #ffffff;
-    background-color: rgba(0, 0, 0, 0.832);
+    background-color: rgb(0, 0, 0);
   }
 
   .navbar a {
