@@ -37,8 +37,9 @@
 
 
 
-<p align="center">
+
 ##
+
 ## Instruktioner
 
 Denna uppgift går ut på att du ska koda upp en enklare webbplats från grunden med HTML och CSS. Det du ska bygga är en CV-sida för dig själva med information om dig, ditt CV, kontaktinformation och en portfolio.
@@ -87,4 +88,4 @@ Du ska bygga en enkel webbplats som följer följande kravställningar:
 - Jobba med CSS-animationer
 - Bygg sidan i en light- och en dark-version som automatiskt slås på, enbart med CSS
 
-</p>
+
