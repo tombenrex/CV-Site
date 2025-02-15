@@ -66,17 +66,6 @@ Du ska bygga en enkel webbplats som följer följande kravställningar:
 
 - Din portfolio ska vara en listning av projekt med en rubrik och en bild. *Om du väljer att göra en modal-popup (se Extra utmaningar) kan du sätta en knapp här där besökaren kan klicka på för att få mer information.*
 
-### **Layout**
-
-- Din startsida ska vara designad efter följande skiss:
-    
-    ![Screenshot 2023-09-12 at 15.12.52.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/76ff052e-5519-4c95-9c8a-d50fbda370ef/ade192dc-4135-4b08-8f14-2358fc52aa9e/Screenshot_2023-09-12_at_15.12.52.png)
-    
-    Ladda ner skisserna här:
-    
-    [Mobile.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/76ff052e-5519-4c95-9c8a-d50fbda370ef/eeac3072-3f3d-44c4-ad0d-a38ec0290f0f/Mobile.pdf)
-    
-    [Desktop.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/76ff052e-5519-4c95-9c8a-d50fbda370ef/df2734f7-6f51-44b1-80d3-2fd0b1ce53d7/Desktop.pdf)
     
 - Din sida ska ha ett eller flera typsnitt som laddas in från en typnittsfil eller från exempelvis Google Fonts.
 - Sidan ska anpassa sig någorlunda för olika skärmstorlekar så det går att ta del av innehållet utan större problem både i en mobil och i en dator.
