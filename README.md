@@ -1,12 +1,15 @@
-<div>
+<p align="center">
 
   <img src="img/preview 1.png" max-height="600"  />
   <img src="img/preview2.png" max-height="600" /> 
   <img src="img/preview 3.png" max-height="600" /> 
-  
-</div>
+  </p>
 
 
+
+<p align="center">
+:point_right:<a href="https://tombenrex.github.io/CV-Site/" target="blank">Live Server</a> :point_left:
+</p>
 
 ##
 
@@ -34,7 +37,7 @@
 
 
 
-
+<p align="center">
 ##
 ## Instruktioner
 
@@ -84,4 +87,4 @@ Du ska bygga en enkel webbplats som följer följande kravställningar:
 - Jobba med CSS-animationer
 - Bygg sidan i en light- och en dark-version som automatiskt slås på, enbart med CSS
 
-
+</p>
