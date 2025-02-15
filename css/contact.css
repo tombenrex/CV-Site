@@ -8,7 +8,7 @@ body {
   font-family: "Merriweather", serif;
   background-color: #cccccc;
   color: white;
-  background-image: url("..//img/contact.jpg");
+  background-image: url("../img/contact.jpg");
   background-size: cover;
 }
 

@@ -308,7 +308,7 @@ p {
 
   .img-holder,
   .cv-placeholder {
-    height: auto; /* Allow the image and CV placeholder to resize on smaller screens */
+    height: auto;
   }
 
   .navbar {
