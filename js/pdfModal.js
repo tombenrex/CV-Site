@@ -1,46 +1,46 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const modal = document.querySelector("#pdfModal");
   const btn = document.querySelector("#pdf-link");
   const closeBtn = document.querySelector(".close");
   const pdfFrame = document.querySelector("#pdfFrame");
-  
-  if (modal && btn && closeBtn) {
-    // Ensure modal starts as hidden for screen readers
-    modal.setAttribute("aria-hidden", "true");
-    
-    // Function to open the modal
+
+  if (modal && btn && closeBtn && pdfFrame) {
+    // Function to open the modal and load the PDF
     function openModal() {
-      modal.style.display = "flex"; // Use flex for centering
+      const pdfUrl = pdfFrame.getAttribute("data-src");
+      pdfFrame.src = pdfUrl; // Set the iframe src to load the PDF
+      modal.style.display = "flex"; // Show the modal
       modal.setAttribute("aria-hidden", "false");
-      closeBtn.focus(); // Move focus to close button for accessibility
+      closeBtn.focus(); // Focus on the close button for accessibility
     }
-    
-    // Function to close the modal
+
+    // Function to close the modal and unload the PDF
     function closeModal() {
-      modal.style.display = "none";
+      modal.style.display = "none"; // Hide the modal
       modal.setAttribute("aria-hidden", "true");
-      btn.focus(); // Return focus to the button
+      pdfFrame.src = ""; // Unload the PDF
+      btn.focus(); // Return focus to the trigger button
     }
-    
-    // Open modal when button is clicked
-    btn.addEventListener("click", (e) => {
-      e.preventDefault(); // Prevent page jump
+
+    // Event listener for the button to open the modal
+    btn.addEventListener("click", function (e) {
+      e.preventDefault(); // Prevent default link behavior
       openModal();
     });
-    
-    // Close modal when close button is clicked
+
+    // Event listener for the close button
     closeBtn.addEventListener("click", closeModal);
-    
-    // Close modal when clicking outside modal content
-    modal.addEventListener("click", (event) => {
-      if (event.target === modal) {
+
+    // Event listener for clicks outside the modal content to close the modal
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) {
         closeModal();
       }
     });
-    
-    // Close modal with Escape key
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && modal.style.display === "flex") {
+
+    // Event listener for the Escape key to close the modal
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && modal.style.display === "flex") {
         closeModal();
       }
     });

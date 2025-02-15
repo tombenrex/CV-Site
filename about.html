@@ -81,9 +81,11 @@
         </div>
         <div class="google-map">
           <div style="width: 100%">
-            <iframe class="google"
+            <iframe
+              class="google"
               style="width: 100%; height: 100%; border: none"
               src="https://maps.google.com/maps?width=100%25&amp;height=100%25&amp;hl=en&amp;q=str%C3%A4ngn%C3%A4s+(My%20Home%20Sweet%20Home)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              loading="lazy"
             ></iframe>
           </div>
         </div>
@@ -140,21 +142,26 @@
               </tr>
             </tfoot>
           </table>
-          <a
-            href="javascript:void(0);"
-            id="pdf-link"
-            title="Open a popup (modal)"
-          >
+          <a href="#" id="pdf-link" title="Open a popup (modal)">
             Click here for more detailed CV
             <i class="fa-solid fa-file-pdf fa-xl"></i>
           </a>
-          <div id="pdfModal" class="modal">
+          <div
+            id="pdfModal"
+            class="modal"
+            role="dialog"
+            aria-labelledby="modalTitle"
+            aria-hidden="true"
+            tabindex="-1"
+            style="display: none"
+          >
             <div class="modal-content">
-              <span class="close">close &times;</span>
+              <button class="close" aria-label="Close">&times;</button>
               <iframe
                 class="pdf-iframe"
-                src="pdf/cv.pdf"
                 id="pdfFrame"
+                data-src="pdf/cv.pdf"
+                title="PDF Document"
               ></iframe>
             </div>
           </div>
