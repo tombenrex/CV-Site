@@ -244,39 +244,27 @@ tfoot td {
 }
 
 footer {
-  border-top: 1px solid #ffffff;
-  display: flex;
-  justify-content: flex-end;
-  padding: 1rem;
-  box-shadow: 0px -10px 12px 2px rgb(0 0 0 / 76%);
-}
-
-footer a {
-  border: solid #ffffff65;
-  padding: 0.3rem;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  margin: 1px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #00000061;
+  padding: 1rem;
+  box-shadow: 0px 11px 14px 9px rgba(0, 0, 0, 0.459);
+  border-top: 1px solid #ffffff78;
 }
 
-.fa-xl {
-  margin-left: 0.5rem;
-}
 .socials {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  border: 2px dotted white;
+  justify-content: space-between;
   padding: 0.5rem;
-  line-height: 1.8rem;
+}
+.fa-xl {
+  margin-left: 0.5rem;
 }
 
 @media (max-width: 800px) {
   main {
     padding: 1rem;
+    margin-bottom: 5rem;
   }
 
   .navbar {
@@ -334,17 +322,6 @@ footer a {
   img.github-logo {
     width: 80%;
     height: auto;
-  }
-
-  footer {
-    flex-direction: column;
-    padding: 1rem;
-  }
-
-  footer a {
-    width: 100%;
-    text-align: center;
-    padding: 0.5rem;
   }
 
   table {

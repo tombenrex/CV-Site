@@ -7,7 +7,7 @@
 body {
   font-family: "Merriweather", serif;
   color: white;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 header {
@@ -242,11 +242,13 @@ main {
 }
 
 footer {
-  display: flex;
-  justify-content: flex-end;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   padding: 1rem;
   box-shadow: 0px 11px 14px 9px rgba(0, 0, 0, 0.459);
   border-top: 1px solid #ffffff78;
+  background: #000;
 }
 
 .socials {
@@ -305,6 +307,9 @@ p {
 }
 
 @media (max-width: 800px) {
+  main {
+    margin-bottom: 10rem;
+  }
   .top-section {
     flex-direction: column;
   }
