@@ -1,8 +1,8 @@
 <p align="center">
 
-  <img src="img/preview 1.png" max-height="600"  />
+  <img src="img/preview1.png" max-height="600"  />
   <img src="img/preview2.png" max-height="600" /> 
-  <img src="img/preview 3.png" max-height="600" /> 
+  <img src="img/preview3.png" max-height="600" /> 
   </p>
 
 
