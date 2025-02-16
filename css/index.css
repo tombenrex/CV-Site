@@ -37,6 +37,8 @@ header {
 
 .dark-mode {
   display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .navbar {
@@ -99,18 +101,9 @@ main {
 .img-holder {
   min-height: 200px;
   border-radius: 10px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.img-background {
-  position: absolute;
-  width: 50%;
-  height: 100%;
   background-image: url("../img/tom.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 
@@ -315,6 +308,10 @@ p {
   .top-section {
     flex-direction: column;
   }
+  .img-holder {
+    background-size: contain;
+    min-height: 240px;
+  }
 
   .card-section {
     grid-template-columns: repeat(2, 1fr);
@@ -337,21 +334,14 @@ p {
 
   .navbar.visible {
     display: flex;
-    padding: 1rem;
     align-items: stretch;
-    width: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
     border: 1px solid #ffffff;
     background-color: rgb(0, 0, 0);
   }
 
   .navbar a {
-    color: white;
-    padding: 1rem;
     text-align: center;
-    text-decoration: none;
     border-bottom: 1px solid #fff;
   }
 }
