@@ -13,6 +13,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   border-bottom: 0.1rem solid #ffffff45;
   box-shadow: 0px 20px 19px 3px rgb(0 0 0 / 34%);
 }
@@ -35,17 +36,8 @@ header {
   margin-top: -1rem;
 }
 
-.dark-mode {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
 .navbar {
   padding: 0.6rem 1.2rem 0.6rem 0.2rem;
-  display: flex;
-  align-items: flex-end;
-  gap: 0.5rem;
 }
 
 .navbar i,
@@ -78,6 +70,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10rem;
 }
 
 .top-section {
@@ -309,6 +302,9 @@ p {
 @media (max-width: 800px) {
   main {
     margin-bottom: 10rem;
+  }
+  header {
+    align-items: normal;
   }
   .top-section {
     flex-direction: column;

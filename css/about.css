@@ -13,6 +13,7 @@ body {
 
 header {
   display: flex;
+  align-items: flex-end;
   justify-content: space-between;
   border-bottom: 0.1rem solid #ffffff45;
   box-shadow: 0px 20px 19px 3px rgb(0 0 0 / 34%);
@@ -43,9 +44,6 @@ a {
 
 .navbar {
   padding: 0.6rem 1.2rem 0.6rem 0.2rem;
-  display: flex;
-  align-items: flex-end;
-  gap: 0.5rem;
 }
 
 .navbar i,
@@ -72,6 +70,7 @@ a {
 main {
   padding: 20px;
   min-height: 100vh;
+  margin-bottom: 5rem;
 }
 
 .container {

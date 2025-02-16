@@ -15,6 +15,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   border-bottom: 0.1rem solid #ffffff45;
   box-shadow: 0px 20px 19px 3px rgb(0 0 0 / 34%);
 }
@@ -46,9 +47,6 @@ main {
 
 .navbar {
   padding: 0.6rem 1.2rem 0.6rem 0.2rem;
-  display: flex;
-  align-items: flex-end;
-  gap: 0.5rem;
 }
 
 .navbar i,
