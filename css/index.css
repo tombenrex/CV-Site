@@ -50,7 +50,6 @@ header {
 .navbar a {
   border: 0.1rem solid #fff;
   padding: 0.3rem;
-  background: #00000063;
 }
 
 .menu-toggle-btn {
@@ -341,9 +340,8 @@ p {
   }
 
   .navbar .button {
-    position: relative;
+    position: static;
     max-width: 200px;
-    justify-content: center;
   }
 
   .navbar.visible {
@@ -353,6 +351,7 @@ p {
     border: 1px solid #ffffff;
     background-color: rgb(0, 0, 0);
     padding: 0.5rem 3rem 0.5rem 0.4rem;
+    gap: 6px;
   }
 
   .navbar a {
