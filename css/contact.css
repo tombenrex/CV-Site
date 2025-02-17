@@ -6,10 +6,11 @@
 
 body {
   font-family: "Merriweather", serif;
-  background-color: #cccccc;
-  color: white;
+  background-color: #fff;
+  color: #fff;
   background-image: url("../img/contact.jpg");
   background-size: cover;
+  min-height: 100vh;
 }
 
 header {
@@ -22,7 +23,6 @@ header {
 
 main {
   padding: 20px;
-  min-height: 100vh;
   display: flex;
   justify-content: space-evenly;
 }
@@ -57,8 +57,10 @@ main {
 }
 
 .navbar a {
-  border: 0.1rem solid #9c9c9c;
+  border: 0.1rem solid #ffffff42;
   padding: 0.3rem;
+  background: linear-gradient(39deg, #ffffff42, #000000, #ffffff42);
+  border-radius: 5px;
 }
 
 :where(.navbar, header) a:hover {
@@ -94,7 +96,7 @@ a {
 }
 
 .form-container {
-  margin-bottom: 10rem;
+  margin-top: 5rem;
 }
 
 label {
@@ -149,6 +151,9 @@ footer {
     flex-direction: column;
     width: 100%;
   }
+  header {
+    align-items: normal;
+  }
 
   .menu-toggle-btn {
     display: block;
@@ -161,6 +166,7 @@ footer {
     border: 1px solid #fff;
     background-color: #000000c0;
     padding: 0.5rem 3rem 0.5rem 0.4rem;
+    gap: 6px;
   }
 
   .navbar a {

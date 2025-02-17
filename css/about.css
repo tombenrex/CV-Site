@@ -281,6 +281,9 @@ footer {
     padding: 1rem;
     margin: 2rem 0 10rem 0;
   }
+  header {
+    align-items: normal;
+  }
 
   .navbar {
     display: none;
