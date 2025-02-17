@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Head -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/contact.css" />
+    <title>| Contact |</title>
+    <link rel="stylesheet" href="css/contact.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,9 +24,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/nav-bar.js" defer></script>
-    <title>| Contact |</title>
   </head>
-  <!-- Body -->
+
   <body>
     <!-- Header -->
     <header>
@@ -34,6 +33,7 @@
         <a href="index.html" class="page-title">Toms Cv</a>
         <a href="index.html" class="page-title-2">& Projects</a>
       </div>
+
       <!-- Nav -->
       <nav class="navbar">
         <a href="index.html">Home<i class="fa-solid fa-house"></i></a>
@@ -46,9 +46,10 @@
         <i class="nav-toggle fa-solid fa-bars xl"></i>
       </button>
     </header>
+
     <!-- Main -->
     <main>
-      <div class="top-section">
+      <section class="top-section">
         <div class="text-holder">
           <h2>Feel free and send me a message</h2>
           <p>Only kindly messages are accepted (:</p>
@@ -56,28 +57,29 @@
         <div class="form-container">
           <form action="http://www.tompaslife.se/submit_form.php" method="POST">
             <!-- Me try to back-end  -->
-            <!-- Name Input -->
+
             <label for="name">Name</label>
             <input
               type="text"
               id="name"
               name="name"
               placeholder="Your name.."
+              required
             />
-            <!-- Message Textarea -->
             <label for="message">Your message</label>
             <textarea
               id="message"
               name="message"
               placeholder="Send me a message"
               style="height: 200px"
+              required
             ></textarea>
-            <!-- Submit Button -->
             <input type="submit" value="Submit" />
           </form>
         </div>
-      </div>
+      </section>
     </main>
+
     <!-- Footer -->
     <footer>
       <div class="socials">
