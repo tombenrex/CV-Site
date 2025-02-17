@@ -57,11 +57,14 @@ main {
 }
 
 .navbar a {
-  border: 0.1rem solid #fff;
+  border: 0.1rem solid #9c9c9c;
   padding: 0.3rem;
 }
 
-:where(.navbar, footer, header) a:hover {
+:where(.navbar, header) a:hover {
+  background-color: grey;
+}
+footer a:hover {
   color: #000;
 }
 
@@ -122,7 +125,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background: #000;
+  background: #999999;
 }
 
 footer {
@@ -156,7 +159,7 @@ footer {
     align-items: stretch;
     position: absolute;
     border: 1px solid #fff;
-    background-color: #000;
+    background-color: #000000c0;
     padding: 0.5rem 3rem 0.5rem 0.4rem;
   }
 

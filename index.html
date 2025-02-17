@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Head -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>| Toms CV & Projects |</title>
     <link rel="stylesheet" href="css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,9 +25,8 @@
     ></script>
     <script src="js/colorchange.js" defer></script>
     <script src="js/nav-bar.js" defer></script>
-    <title>| Toms CV & Projects |</title>
   </head>
-  <!-- Body -->
+
   <body class="changeColor">
     <!-- Header -->
     <header>
@@ -35,17 +34,17 @@
         <a href="index.html" class="page-title">Toms Cv</a>
         <a href="index.html" class="page-title-2">& Projects</a>
       </div>
+
       <!-- Nav -->
       <nav class="navbar">
-        <i
-          onclick="changeColor()"
-          id="colorChangeIcon"
-          class="fa-solid fa-lightbulb"
-        ></i>
         <a class="button" id="changeText" onclick="changeColor()">
           Dark Mode
+          <i
+            onclick="changeColor()"
+            id="colorChangeIcon"
+            class="fa-solid fa-lightbulb"
+          ></i>
         </a>
-
         <a href="index.html"
           >Home<i class="fa-solid fa-house" style="color: #fff200"></i
         ></a>
@@ -58,10 +57,11 @@
         <i class="nav-toggle fa-solid fa-bars xl"></i>
       </button>
     </header>
+
     <!-- main -->
     <main>
-      <div class="top-section">
-        <div class="img-holder"></div>
+      <section class="top-section">
+        <figure class="img-holder"></figure>
         <div class="cv-placeholder">
           <h1>Greetings!</h1>
           <p>
@@ -69,18 +69,18 @@
             LinkedIn or send me a message. I hope you enjoy my work!
           </p>
         </div>
-      </div>
-      <div class="cards-headline">
+      </section>
+      <section class="cards-headline">
         <h1>My Projects:</h1>
-      </div>
-      <div class="card-section">
+      </section>
+      <section class="card-section">
         <!-- card 1 -->
-        <div class="card">
+        <article class="card">
           <div class="card-inner">
-            <div class="card-front">
+            <figure class="card-front">
               <img src="img/code.jpg" alt="a pice of computer code" />
-              <h1>Project 1</h1>
-            </div>
+              <figcaption>Project 1</figcaption>
+            </figure>
             <div class="card-back">
               <h3>Login Page</h3>
               <p>A login page in HTML and CSS</p>
@@ -92,14 +92,15 @@
               </a>
             </div>
           </div>
-        </div>
+        </article>
+
         <!-- card 2 -->
-        <div class="card">
+        <article class="card">
           <div class="card-inner">
-            <div class="card-front">
+            <figure class="card-front">
               <img src="img/code.jpg" alt="a pice of computer code" />
-              <h1>Project 2</h1>
-            </div>
+              <figcaption>Project 2</figcaption>
+            </figure>
             <div class="card-back">
               <h3>CV Page</h3>
               <p>This is my current project.</p>
@@ -111,37 +112,39 @@
               </a>
             </div>
           </div>
-        </div>
+        </article>
+
         <!-- card 3 -->
-        <div class="card">
+        <article class="card">
           <div class="card-inner">
-            <div class="card-front">
+            <figure class="card-front">
               <img src="img/code.jpg" alt="pice of computer code" />
-              <h1>Project 3</h1>
-            </div>
+              <figcaption>Project 3</figcaption>
+            </figure>
             <div class="card-back">
-              <p></p>
               <p>Comming soon!</p>
             </div>
           </div>
-        </div>
+        </article>
+
         <!-- card 4 -->
-        <div class="card">
+        <article class="card">
           <div class="card-inner">
-            <div class="card-front">
+            <figure class="card-front">
               <img src="img/code.jpg" alt="a pice of computer code" />
-              <h1>Project 4</h1>
-            </div>
+              <figcaption>Project 4</figcaption>
+            </figure>
             <div class="card-back">
               <p>Comming soon!</p>
             </div>
           </div>
-        </div>
-      </div>
+        </article>
+      </section>
     </main>
+
     <!-- Footer -->
     <footer>
-      <div class="socials">
+      <section class="socials">
         <a
           href="https://www.linkedin.com/in/tmlsn/"
           target="_blank"
@@ -161,7 +164,7 @@
           title="Opens your email client"
           >Contact Me<i class="fa-regular fa-envelope fa-xl"></i>
         </a>
-      </div>
+      </section>
     </footer>
   </body>
 </html>

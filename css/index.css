@@ -50,6 +50,7 @@ header {
 .navbar a {
   border: 0.1rem solid #fff;
   padding: 0.3rem;
+  background: #00000063;
 }
 
 .menu-toggle-btn {
@@ -185,7 +186,7 @@ main {
   filter: blur(3px);
 }
 
-.card h1 {
+.card-front figcaption {
   font-family: Teko;
   text-shadow: #000000 0px 10px 7px;
   text-align: center;
@@ -275,7 +276,7 @@ a {
 }
 
 :where(.button, nav a, footer a):hover {
-  background-color: #ff00006e;
+  background: #ffffff6e;
 }
 
 .fa-house {
@@ -297,6 +298,12 @@ h3 {
 
 p {
   color: #ffffff;
+}
+
+.navbar .button {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
 }
 
 @media (max-width: 800px) {
@@ -333,12 +340,19 @@ p {
     display: block;
   }
 
+  .navbar .button {
+    position: relative;
+    max-width: 200px;
+    justify-content: center;
+  }
+
   .navbar.visible {
     display: flex;
     align-items: stretch;
     position: absolute;
     border: 1px solid #ffffff;
     background-color: rgb(0, 0, 0);
+    padding: 0.5rem 3rem 0.5rem 0.4rem;
   }
 
   .navbar a {
