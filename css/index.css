@@ -273,7 +273,7 @@ a {
   text-shadow: #000000 0px 10px 7px;
 }
 
-:where(footer, .navbar, .socials, .card-back) a:hover {
+:where(footer, .navbar, .socials, .button, .card-back) a:hover {
   background-color: #ffffff83;
 }
 
